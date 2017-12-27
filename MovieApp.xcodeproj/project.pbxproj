@@ -17,7 +17,7 @@
 		D77F59941FF38A1E006F0F65 /* MovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F59931FF38A1E006F0F65 /* MovieAppTests.swift */; };
 		D77F599F1FF38A1E006F0F65 /* MovieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F599E1FF38A1E006F0F65 /* MovieAppUITests.swift */; };
 		D77F59B11FF39C34006F0F65 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F59B01FF39C34006F0F65 /* DetailVC.swift */; };
-		D77F59B31FF39F4D006F0F65 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F59B21FF39F4D006F0F65 /* WeatherCell.swift */; };
+		D77F59B31FF39F4D006F0F65 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F59B21FF39F4D006F0F65 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		D77F599E1FF38A1E006F0F65 /* MovieAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUITests.swift; sourceTree = "<group>"; };
 		D77F59A01FF38A1E006F0F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D77F59B01FF39C34006F0F65 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		D77F59B21FF39F4D006F0F65 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		D77F59B21FF39F4D006F0F65 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,7 @@
 		D77F59AE1FF3924F006F0F65 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D77F59B21FF39F4D006F0F65 /* WeatherCell.swift */,
+				D77F59B21FF39F4D006F0F65 /* MovieCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -377,7 +377,7 @@
 			files = (
 				D77F597E1FF38A1E006F0F65 /* ViewController.swift in Sources */,
 				D77F59B11FF39C34006F0F65 /* DetailVC.swift in Sources */,
-				D77F59B31FF39F4D006F0F65 /* WeatherCell.swift in Sources */,
+				D77F59B31FF39F4D006F0F65 /* MovieCell.swift in Sources */,
 				D77F597C1FF38A1E006F0F65 /* AppDelegate.swift in Sources */,
 				D77F59841FF38A1E006F0F65 /* MovieApp.xcdatamodeld in Sources */,
 			);

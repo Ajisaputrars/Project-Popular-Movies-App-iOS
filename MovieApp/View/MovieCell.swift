@@ -8,6 +8,6 @@
 
 import UIKit
 
-class WeatherCell: UICollectionViewCell {
+class MovieCell: UICollectionViewCell {
 
 }
