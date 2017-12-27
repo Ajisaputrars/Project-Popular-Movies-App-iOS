@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uo0-9v-M55">
-                                <rect key="frame" x="5" y="110" width="375" height="557"/>
+                                <rect key="frame" x="15" y="110" width="345" height="557"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1mF-3r-1fA">
                                     <size key="itemSize" width="133" height="185"/>
@@ -74,11 +74,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Uo0-9v-M55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="8FV-JH-P05"/>
+                            <constraint firstItem="Uo0-9v-M55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="8FV-JH-P05"/>
                             <constraint firstItem="Uo0-9v-M55" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JlC-jf-AqV"/>
                             <constraint firstItem="Uo0-9v-M55" firstAttribute="top" secondItem="a5w-SY-CZz" secondAttribute="bottom" constant="8" id="Mo5-yd-SRS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uo0-9v-M55" secondAttribute="trailing" constant="15" id="Qet-oj-he1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a5w-SY-CZz" secondAttribute="trailing" constant="16" id="Ubn-jw-Uhi"/>
-                            <constraint firstItem="Uo0-9v-M55" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="5" id="eXs-Qa-lID"/>
                             <constraint firstItem="a5w-SY-CZz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hZe-Ot-n8a"/>
                             <constraint firstItem="a5w-SY-CZz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="j7g-Vm-ERv"/>
                         </constraints>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="119"/>
+            <point key="canvasLocation" x="485.60000000000002" y="118.29085457271366"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="Ij7-hs-yio">
