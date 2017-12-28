@@ -74,6 +74,9 @@
                                     <segment title="Top Rated"/>
                                     <segment title="Coming Soon"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="hhs-cW-Ol0"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -91,6 +94,7 @@
                     <navigationItem key="navigationItem" id="EA2-OV-Yxo"/>
                     <connections>
                         <outlet property="collection" destination="Uo0-9v-M55" id="hwa-0u-bQW"/>
+                        <outlet property="mainSegmentedControl" destination="a5w-SY-CZz" id="vIu-VQ-kka"/>
                         <segue destination="CaZ-Ek-VvN" kind="show" identifier="detailSegue" id="yNp-t7-Eth"/>
                     </connections>
                 </viewController>

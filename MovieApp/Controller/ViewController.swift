@@ -12,6 +12,7 @@ import SwiftyJSON
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var mainSegmentedControl: UISegmentedControl!
     @IBOutlet weak var collection: UICollectionView!
     
     private var movies = [MovieModel]()
@@ -20,7 +21,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         preparingAllDelegateAndDatasource()
-        
         requestJson(i: 0)
     }
     
@@ -33,7 +33,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             let aMovie = movies[indexPath.row]
             cell.configureCell(movie: aMovie)
-            
             return cell
         }
         return UICollectionViewCell()
@@ -52,6 +51,23 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         performSegue(withIdentifier: "detailSegue", sender: nil)
     }
     
+    @IBAction func changeSegmentedControl(_ sender: Any) {
+        switch mainSegmentedControl.selectedSegmentIndex {
+        case 0:
+            requestJson(i: 0)
+            self.collection.reloadData()
+        case 1:
+            requestJson(i: 1)
+            self.collection.reloadData()
+        case 2:
+            requestJson(i: 2)
+            self.collection.reloadData()
+        default:
+            break
+        }
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue" {
            
@@ -66,8 +82,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     private func myParsingJson(url: String){
         let movieUrl = URL(string: url)!
         Alamofire.request(movieUrl).responseJSON { (response) in
+            self.movies.removeAll()
             let json = JSON(response.result.value!)
-            
             if let movieDbData = json["results"].arrayObject as? [Dictionary<String, AnyObject>] {
                 for obj in movieDbData{
                     let movie = MovieModel(movieDict: obj)
@@ -75,28 +91,26 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 }
                 self.collection.reloadData()
             }
-            
-            
-            
-            print("Ini URL nya gan! = " + url)
-            print("Nih Value dari json MovieDB = \(json)")
-            
         }
     }
 
     private func requestJson(i: Int){
         if (i==0){
             filmCategory = "popular";
+            self.title = "Most Popular"
+            print("Request JSON 0 dijalankan")
         } else if (i==1){
             filmCategory = "top_rated";
+            self.title = "Top Rated"
+            print("Request JSON 1 dijalankan")
         } else if (i==2){
             filmCategory = "upcoming";
+            self.title = "Coming Soon"
+            print("Request JSON 2 dijalankan")
         }
-        
         let fullUrl = "http://api.themoviedb.org/3/movie/"
             + filmCategory +
             "?api_key=" + API_KEY
-        
         myParsingJson(url: fullUrl)
     }
 }
