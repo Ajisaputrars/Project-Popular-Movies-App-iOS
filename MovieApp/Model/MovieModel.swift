@@ -16,18 +16,18 @@ public class MovieModel{
     private var _releaseDate: String!
     private var _backdropPath: String!
     private var _voteAverage: String!
-    private var _id: String!
+    private var _id: Int!
     
     public var title: String{
         if _title == nil {
-            _title = "Isinya nil"
+            _title = "No title available"
         }
         return _title
     }
     
     public var overview: String{
         if _overview == nil {
-            _overview = "Isinya nil"
+            _overview = "No overview available"
         }
         return _overview
     }
@@ -41,7 +41,7 @@ public class MovieModel{
     
     public var releaseDate: String{
         if _releaseDate == nil {
-            _releaseDate = "Isinya nil"
+            _releaseDate = "No date available"
         }
         return _releaseDate
     }
@@ -55,14 +55,14 @@ public class MovieModel{
     
     public var voteAverage: String{
         if _voteAverage == nil {
-            _voteAverage = "Isinya nil"
+            _voteAverage = "No rating available"
         }
         return _voteAverage
     }
     
-    public var id: String{
+    public var id: Int{
         if _id == nil {
-            _id = "Isinya nil"
+            _id = 0
         }
         return _id
     }
@@ -88,11 +88,11 @@ public class MovieModel{
             self._backdropPath = backDrop
         }
         
-        if let voteAverage = movieDict["vote_average"] as? String{
-            self._voteAverage = voteAverage
+        if let voteAverage = movieDict["vote_average"] as? Double{
+            self._voteAverage = String(voteAverage)
         }
         
-        if let id = movieDict["id"] as? String{
+        if let id = movieDict["id"] as? Int{
             self._id = id
         }
     }

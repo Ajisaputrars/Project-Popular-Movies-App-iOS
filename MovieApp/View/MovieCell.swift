@@ -21,9 +21,7 @@ class MovieCell: UICollectionViewCell {
     
     func configureCell(movie: MovieModel){
         self.movie = movie
-        
         titleLabel.text = self.movie.title
-
         let urlString = "https://image.tmdb.org/t/p/w185" + self.movie.posterPath
         let url = URL(string: urlString)
         imageMovie.kf.setImage(with: url)
