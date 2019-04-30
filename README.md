@@ -12,7 +12,7 @@ This app has several features:
 5. Display the detail of a particular movie, including ratings, trailers, info, and reviews.
 
 <p align="center">
-  <img src="https://github.com/Ajisaputrars/Project-Popular-Movies-App-iOS/blob/master/screenshot1.png" width="500" align="center">
+  <img src="https://github.com/Ajisaputrars/Project-Popular-Movies-App-iOS/blob/master/screenshot1.png" width="700" align="center">
 </p>
 
 ### **Author**
