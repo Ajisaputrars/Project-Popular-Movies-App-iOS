@@ -1,5 +1,3 @@
-# Popular Movie
-
 # **Project - Popular Movies iOS**
 This is a simple app that demonstrate how to get data from third-party service. In this app, we use [The Movie Database (TMDb)][1] API service.
 
