@@ -8,4 +8,4 @@
 
 import Foundation
 
-let API_KEY = "";
+let API_KEY = "0df44c4b965ae567948c8749ade6c374"
