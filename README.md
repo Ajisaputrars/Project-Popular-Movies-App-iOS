@@ -24,7 +24,7 @@ This project is free and open. You can participate to this project to make even 
 ### **License**
 This project is licensed under the GNU General Public License v3.0 - see the [**LICENSE.md**][4] file for details.
 
-[1]:	themoviedb.org
-[2]:	themoviedb.org
+[1]:	https://themoviedb.org
+[2]:	https://themoviedb.org
 [3]:	https://github.com/Ajisaputrars
-[4]:	https://github.com/Ajisaputrars/TRY-Weather-Forecast-iOS/blob/master/LICENSE
+[4]:	https://github.com/Ajisaputrars/Project-Popular-Movies-App-iOS/blob/master/LICENSE
